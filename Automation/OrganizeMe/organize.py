@@ -4,3 +4,10 @@ SUBDIRECTORIES = {
     "VIDEOS": ['.mov','.avi','.mp4'],
     "IMAGES": ['.jpg','.jpeg','.png']
 }
+def pickDirectory(value):
+    for category,suffixes in SUBDIRECTORIES.items():
+        for suffix in suffixes:
+            if suffix == value:
+                return category
+
+print(pickDirectory('.pdf'))

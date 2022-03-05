@@ -9,8 +9,8 @@ print(response.url)
 
 content = response.content
 info = json.loads(content)  #load the JSON content into python friendly dictionaries
-print(type(info))
-print(info)
+# print(type(info))
+# print(info)
 
 item = info['items']
 itemInfo = item[0]

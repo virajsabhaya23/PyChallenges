@@ -1,0 +1,47 @@
+[
+    {
+        "segment": "Government",
+        "country": "Canada",
+        "product": "Carretera"
+    },
+    {
+        "segment": "Government",
+        "country": "Germany",
+        "product": "Carretera"
+    },
+    {
+        "segment": "Midmarket",
+        "country": "France",
+        "product": "Carretera"
+    },
+    {
+        "segment": "Midmarket",
+        "country": "Germany",
+        "product": "Carretera"
+    },
+    {
+        "segment": "Midmarket",
+        "country": "Mexico",
+        "product": "Carretera"
+    },
+    {
+        "segment": "Government",
+        "country": "Germany",
+        "product": "Carretera"
+    },
+    {
+        "segment": "Midmarket",
+        "country": "Germany",
+        "product": "Montana"
+    },
+    {
+        "segment": "Channel Partners",
+        "country": "Canada\tMontana",
+        "product": "None"
+    },
+    {
+        "segment": "Government",
+        "country": "France",
+        "product": "Montana"
+    }
+]

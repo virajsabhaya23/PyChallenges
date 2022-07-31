@@ -1,16 +1,21 @@
-import json,csv
+import json
+import csv
 
-with open ("sample.csv","r") as f:
+with open("/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasatArlington/Documents/MyPersonalProject/PyChallenges/Automation/ExcelToJSON/sample.csv", "r") as f:
     reader = csv.reader(f)
     next(reader)
     data = []
     for row in reader:
-        data.append({"segment":row[0],
-                     "country":row[1],
-                     "product":row[2]})
+        data.append({"outDetails": row[0],
+                    "inDetails": {
+                        "segment": row[1],
+                        "country": row[2],
+                        "product": row[3]
+                        }
+                    })
 
-with open ("sample.json","w") as f:
-    json.dump(data,f,indent=4)
+with open("/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasatArlington/Documents/MyPersonalProject/PyChallenges/Automation/ExcelToJSON/sample.json", "w") as f:
+    json.dump(data, f, indent=4)
 
 # import pandas as pd
 # filePath = r"/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasatArlington/Documents/MyPersonalProject/PyChallenges/Automation/ExcelToJSON/FinancialSample.xlsx"

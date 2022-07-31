@@ -1,10 +1,10 @@
-Segment,Country,Product,DiscountBand
-Government,Canada,Carretera,None
-Government,Germany,Carretera,None
-Midmarket,France,Carretera,None
-Midmarket,Germany,Carretera,None
-Midmarket,Mexico,Carretera,None
-Government,Germany,Carretera,None
-Midmarket,Germany,Montana,None
-Channel Partners,Canada	Montana,None
-Government,France,Montana,None
+name,Segment,Country,Product,DiscountBand
+vendors,Government,Canada,Carretera,None
+vendors,Government,Germany,Carretera,None
+vendors,Midmarket,France,Carretera,None
+vendors,Midmarket,Germany,Carretera,None
+vendors,Midmarket,Mexico,Carretera,None
+vendors,Government,Germany,Carretera,None
+vendors,Midmarket,Germany,Montana,None
+vendors,Channel Partners,Canada	Montana,None
+vendors,Government,France,Montana,None

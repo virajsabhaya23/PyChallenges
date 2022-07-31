@@ -1,23 +1,32 @@
-import json
+# import pandas as pd
 
-people_string = '''
-{
-    "people": [
-        {
-            "name": "John Smith",
-            "phone": "555-555-5555",
-            "email": "  @gmail.com"
-        },
-        {
-            "name": "Jane Doe",
-            "phone": "555-555-5555",
-            "email": "  @gmail.com"
-        }
-    ]
-}
-'''
+# filePath = r"/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasatArlington/Documents/MyPersonalProject/PyChallenges/Automation/ExcelToJSON/FinancialSample.xlsx"
 
-data = json.loads(people_string)
+# df = pd.read_excel(filePath)
 
-for person in data['people']:
-    print(person['name'])
+# segment = df.Segment
+# country = df.Country
+# product = df.Product
+# discount = df.DiscountBand
+# unitsSold = df.UnitsSold
+
+# jsonContainer = {}
+
+# x = 0
+# while x < len(segment):
+#     jsonContainer[segment[x]] = [
+#         {"segment: ": segment[x], },
+#         {"country: ": country[x], },
+#         {"product: ": product[x], },
+#         {"discount: ": discount[x], },
+#         {"unitsSold: ": unitsSold[x]}
+#     ]
+#     x = x+1
+
+# dF = pd.DataFrame(jsonContainer)
+# print(dF)
+
+from excel2json import convert_from_file
+
+xlFile = '/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasatArlington/Documents/MyPersonalProject/PyChallenges/Automation/ExcelToJSON/FinancialSample.xlsx'
+convert_from_file(xlFile)

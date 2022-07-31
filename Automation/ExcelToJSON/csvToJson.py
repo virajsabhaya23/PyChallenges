@@ -1,7 +1,7 @@
 import json
 import csv
 
-with open("/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasatArlington/Documents/MyPersonalProject/PyChallenges/Automation/ExcelToJSON/sample.csv", "r") as f:
+with open("sample.csv", "r") as f:
     reader = csv.reader(f)
     next(reader)
     data = []
@@ -14,11 +14,11 @@ with open("/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasat
                         }
                     })
 
-with open("/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasatArlington/Documents/MyPersonalProject/PyChallenges/Automation/ExcelToJSON/sample.json", "w") as f:
+with open("sample.json", "w") as f:
     json.dump(data, f, indent=4)
 
 # import pandas as pd
-# filePath = r"/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasatArlington/Documents/MyPersonalProject/PyChallenges/Automation/ExcelToJSON/FinancialSample.xlsx"
+# filePath = r"FinancialSample.xlsx"
 # df = pd.read_excel(filePath)
 # segment = df.Segment
 # country = df.Country
@@ -41,5 +41,5 @@ with open("/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasat
 
 
 # from excel2json import convert_from_file
-# xlFile = '/Users/virajsabhaya/Library/CloudStorage/OneDrive-UniversityofTexasatArlington/Documents/MyPersonalProject/PyChallenges/Automation/ExcelToJSON/FinancialSample.xlsx'
+# xlFile = 'FinancialSample.xlsx'
 # convert_from_file(xlFile)
